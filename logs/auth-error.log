@@ -1,0 +1,14 @@
+2026-01-22 13:00:15.123 ERROR [auth-service] Login failed: invalid credentials for email=hacker@malicious.com, ip=203.0.113.50
+2026-01-22 13:00:16.234 WARN  [auth-service] Brute force attempt detected: 5 failed logins from ip=203.0.113.50
+2026-01-22 13:00:17.345 ERROR [auth-service] IP blocked temporarily: ip=203.0.113.50, duration=300s
+2026-01-22 13:01:23.456 ERROR [auth-service] Token validation failed: token expired, user_id=4567
+2026-01-22 13:02:34.567 ERROR [auth-service] Invalid refresh token: token_id=abc123, reason=revoked
+2026-01-22 13:03:45.678 ERROR [auth-service] MFA verification failed: invalid code for user_id=7890, attempts=2
+2026-01-22 13:04:56.789 WARN  [auth-service] Suspicious activity: multiple login attempts from different IPs for user_id=1234
+2026-01-22 13:05:12.890 ERROR [auth-service] Password reset failed: email not found - unknown@example.com
+2026-01-22 13:06:23.901 ERROR [auth-service] Redis connection lost: Error: ECONNREFUSED 127.0.0.1:6379
+2026-01-22 13:06:24.012 WARN  [auth-service] Falling back to database sessions
+2026-01-22 13:07:34.123 ERROR [auth-service] Session creation failed: database timeout after 30000ms
+2026-01-22 13:08:45.234 ERROR [auth-service] JWT signing failed: Error: secretOrPrivateKey must have a value
+2026-01-22 13:09:56.345 WARN  [auth-service] Rate limit exceeded: user_id=5678, endpoint=/api/auth/token
+2026-01-22 13:10:12.456 ERROR [auth-service] OAuth callback failed: invalid state parameter

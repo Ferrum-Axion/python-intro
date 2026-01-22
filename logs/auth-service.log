@@ -1,0 +1,15 @@
+2026-01-22 09:00:00.123 INFO  [auth-service] Service started on port 3000
+2026-01-22 09:00:15.234 INFO  [auth-service] Connected to Redis cache at redis-master:6379
+2026-01-22 09:01:23.345 INFO  [auth-service] Login successful: user_id=1542, ip=192.168.1.45
+2026-01-22 09:02:34.456 INFO  [auth-service] Token generated for user_id=1542, expires_in=3600s
+2026-01-22 09:03:45.567 INFO  [auth-service] Token validated: user_id=1542, remaining_ttl=3540s
+2026-01-22 09:04:56.678 INFO  [auth-service] Login successful: user_id=2845, ip=192.168.1.78
+2026-01-22 09:05:12.789 INFO  [auth-service] Password reset requested for email=jane.smith@example.com
+2026-01-22 09:06:23.890 INFO  [auth-service] Password reset email sent to jane.smith@example.com
+2026-01-22 09:07:34.901 INFO  [auth-service] Token refreshed: user_id=1542, new_expires_in=3600s
+2026-01-22 09:08:45.012 INFO  [auth-service] Logout successful: user_id=2845
+2026-01-22 09:09:56.123 INFO  [auth-service] MFA verification successful: user_id=3156
+2026-01-22 09:10:12.234 INFO  [auth-service] New user registration: email=newuser@example.com
+2026-01-22 09:11:23.345 INFO  [auth-service] Email verification sent to newuser@example.com
+2026-01-22 09:12:34.456 INFO  [auth-service] Session cleanup: removed 45 expired sessions
+2026-01-22 09:13:45.567 INFO  [auth-service] Health check: status=healthy, redis=connected, db=connected

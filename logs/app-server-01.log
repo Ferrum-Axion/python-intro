@@ -1,0 +1,15 @@
+2026-01-22 08:15:23.445 INFO  [main] com.webapp.Application - Starting Application v2.4.1
+2026-01-22 08:15:24.112 INFO  [main] com.webapp.config.DatabaseConfig - Initializing database connection pool
+2026-01-22 08:15:24.556 INFO  [main] com.webapp.config.DatabaseConfig - Connection pool initialized with 10 connections
+2026-01-22 08:15:25.001 INFO  [main] com.webapp.Application - Application started successfully on port 8080
+2026-01-22 08:15:45.233 INFO  [http-nio-8080-exec-1] com.webapp.controller.UserController - GET /api/users - 200 OK (45ms)
+2026-01-22 08:16:12.445 INFO  [http-nio-8080-exec-2] com.webapp.controller.ProductController - GET /api/products?page=1 - 200 OK (123ms)
+2026-01-22 08:17:33.112 INFO  [http-nio-8080-exec-3] com.webapp.controller.OrderController - POST /api/orders - 201 Created (234ms)
+2026-01-22 08:18:01.556 INFO  [http-nio-8080-exec-1] com.webapp.controller.UserController - GET /api/users/1542 - 200 OK (32ms)
+2026-01-22 08:19:22.789 INFO  [http-nio-8080-exec-4] com.webapp.controller.AuthController - POST /api/auth/login - 200 OK (156ms)
+2026-01-22 08:20:15.334 INFO  [http-nio-8080-exec-2] com.webapp.controller.ProductController - GET /api/products/search?q=laptop - 200 OK (89ms)
+2026-01-22 08:21:44.667 INFO  [http-nio-8080-exec-5] com.webapp.controller.CartController - PUT /api/cart/items - 200 OK (67ms)
+2026-01-22 08:22:33.445 INFO  [http-nio-8080-exec-1] com.webapp.controller.UserController - GET /api/users/profile - 200 OK (28ms)
+2026-01-22 08:23:55.112 INFO  [scheduled-task-1] com.webapp.service.CacheService - Cache cleanup completed, removed 234 expired entries
+2026-01-22 08:25:01.889 INFO  [http-nio-8080-exec-3] com.webapp.controller.OrderController - GET /api/orders/history - 200 OK (178ms)
+2026-01-22 08:26:22.334 INFO  [http-nio-8080-exec-2] com.webapp.controller.ProductController - GET /api/products/categories - 200 OK (45ms)

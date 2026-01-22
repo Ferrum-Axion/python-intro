@@ -1,0 +1,16 @@
+2026-01-22 00:00:00.123 INFO  [cron] Starting daily-backup job
+2026-01-22 00:05:15.234 INFO  [cron] daily-backup completed: 45GB compressed, uploaded to s3://backups/2026-01-22/
+2026-01-22 00:15:00.345 INFO  [cron] Starting cleanup-temp-files job
+2026-01-22 00:15:45.456 INFO  [cron] cleanup-temp-files completed: removed 1,234 files, freed 5.6GB
+2026-01-22 01:00:00.567 INFO  [cron] Starting generate-reports job
+2026-01-22 01:12:33.678 INFO  [cron] generate-reports completed: 12 reports generated, emailed to admin@example.com
+2026-01-22 02:00:00.789 INFO  [cron] Starting sync-inventory job
+2026-01-22 02:03:45.890 INFO  [cron] sync-inventory completed: 5,678 products synced with warehouse
+2026-01-22 03:00:00.901 INFO  [cron] Starting optimize-database job
+2026-01-22 03:15:22.012 INFO  [cron] optimize-database completed: VACUUM ANALYZE on 45 tables
+2026-01-22 04:00:00.123 INFO  [cron] Starting send-scheduled-emails job
+2026-01-22 04:02:15.234 INFO  [cron] send-scheduled-emails completed: 234 emails sent
+2026-01-22 05:00:00.345 INFO  [cron] Starting cache-warmup job
+2026-01-22 05:05:33.456 INFO  [cron] cache-warmup completed: 1,000 popular items cached
+2026-01-22 06:00:00.567 INFO  [cron] Starting log-rotation job
+2026-01-22 06:01:12.678 INFO  [cron] log-rotation completed: archived 7 days of logs

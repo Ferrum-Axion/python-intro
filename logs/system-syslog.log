@@ -1,0 +1,15 @@
+Jan 22 08:00:01 prod-server-01 systemd[1]: Starting Daily apt download activities...
+Jan 22 08:00:02 prod-server-01 systemd[1]: Started Daily apt download activities.
+Jan 22 08:00:15 prod-server-01 sshd[5678]: Accepted publickey for deploy from 10.0.0.100 port 54321
+Jan 22 08:01:23 prod-server-01 sudo[5679]: deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/bin/systemctl restart webapp
+Jan 22 08:02:34 prod-server-01 systemd[1]: Stopping Webapp Service...
+Jan 22 08:02:35 prod-server-01 systemd[1]: webapp.service: Succeeded.
+Jan 22 08:02:36 prod-server-01 systemd[1]: Starting Webapp Service...
+Jan 22 08:02:38 prod-server-01 systemd[1]: Started Webapp Service.
+Jan 22 08:03:45 prod-server-01 kernel: [123456.789] eth0: link up (1000Mbps/Full duplex)
+Jan 22 08:04:56 prod-server-01 ntpd[1234]: time reset +0.123456 s
+Jan 22 08:05:12 prod-server-01 cron[4567]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf)
+Jan 22 08:06:23 prod-server-01 sshd[5680]: Accepted publickey for admin from 192.168.1.100 port 54322
+Jan 22 08:07:34 prod-server-01 kernel: [123567.890] TCP: request_sock_TCP: Possible SYN flooding on port 80. Dropping request.
+Jan 22 08:08:45 prod-server-01 systemd[1]: logrotate.service: Succeeded.
+Jan 22 08:09:56 prod-server-01 sshd[5681]: Disconnecting invalid user admin from 203.0.113.50 port 54323: Too many authentication failures

@@ -1,0 +1,12 @@
+2026-01-22 14:00:15.123 ERROR [payment-svc] Payment failed: pi_err001, error=card_declined, decline_code=insufficient_funds
+2026-01-22 14:01:23.234 ERROR [payment-svc] Stripe API error: 429 Too Many Requests, retry_after=60
+2026-01-22 14:02:34.345 WARN  [payment-svc] Webhook signature verification failed: invalid signature
+2026-01-22 14:03:45.456 ERROR [payment-svc] Refund failed: re_err002, error=charge_already_refunded
+2026-01-22 14:04:56.567 ERROR [payment-svc] Payment timeout: pi_timeout001, exceeded 30s gateway timeout
+2026-01-22 14:05:12.678 ERROR [payment-svc] Fraud detection triggered: pi_fraud001, risk_score=95, action=blocked
+2026-01-22 14:06:23.789 WARN  [payment-svc] 3D Secure authentication failed: pi_3ds001, user abandoned
+2026-01-22 14:07:34.890 ERROR [payment-svc] Subscription renewal failed: sub_renew001, error=payment_method_expired
+2026-01-22 14:08:45.901 ERROR [payment-svc] Currency conversion error: unsupported currency pair EUR->XYZ
+2026-01-22 14:09:56.012 ERROR [payment-svc] Database transaction rollback: payment record not saved
+2026-01-22 14:10:12.123 WARN  [payment-svc] Duplicate webhook received: evt_dup001, ignoring
+2026-01-22 14:11:23.234 ERROR [payment-svc] Settlement failed: batch_001, error=bank_account_closed

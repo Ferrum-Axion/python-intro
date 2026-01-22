@@ -1,0 +1,12 @@
+2026-01-22 16:00:15.123 ERROR [api-gateway] Circuit breaker OPEN: inventory-service, failures=5, threshold=3
+2026-01-22 16:00:16.234 ERROR [api-gateway] Request failed: GET /api/v1/inventory -> 503 Service Unavailable
+2026-01-22 16:01:23.345 WARN  [api-gateway] Rate limit exceeded: client_id=app_abc123, 2156 requests/min
+2026-01-22 16:02:34.456 ERROR [api-gateway] Upstream timeout: order-service:8081, request exceeded 30s
+2026-01-22 16:03:45.567 ERROR [api-gateway] SSL handshake failed: client certificate expired
+2026-01-22 16:04:56.678 WARN  [api-gateway] Request blocked: invalid API key, client_ip=198.51.100.23
+2026-01-22 16:05:12.789 ERROR [api-gateway] Route not found: GET /api/v2/deprecated-endpoint -> 404
+2026-01-22 16:06:23.890 ERROR [api-gateway] Upstream connection refused: payment-service:8085
+2026-01-22 16:07:34.901 WARN  [api-gateway] Request body too large: 52MB, limit=10MB
+2026-01-22 16:08:45.012 ERROR [api-gateway] JWT validation failed: token signature invalid
+2026-01-22 16:09:56.123 ERROR [api-gateway] Health check failed: notification-service:8086, status=unhealthy
+2026-01-22 16:10:12.234 WARN  [api-gateway] Graceful shutdown initiated, draining 23 active connections

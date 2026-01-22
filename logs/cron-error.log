@@ -1,0 +1,18 @@
+2026-01-22 00:00:00.123 INFO  [cron] Starting daily-backup job
+2026-01-22 00:03:45.234 ERROR [cron] daily-backup failed: S3 upload error - AccessDenied: Access Denied
+2026-01-22 00:03:45.235 ERROR [cron] Stack trace:
+  at S3Client.upload (s3.js:234)
+  at BackupJob.execute (backup.js:89)
+  at CronRunner.run (cron.js:45)
+2026-01-22 01:00:00.345 INFO  [cron] Starting generate-reports job
+2026-01-22 01:08:12.456 ERROR [cron] generate-reports failed: Database connection timeout after 30s
+2026-01-22 02:00:00.567 INFO  [cron] Starting sync-inventory job
+2026-01-22 02:00:15.678 WARN  [cron] sync-inventory partial failure: 45 products failed to sync
+2026-01-22 02:00:15.679 ERROR [cron] Failed products: SKU-123, SKU-456, SKU-789... (42 more)
+2026-01-22 03:00:00.789 INFO  [cron] Starting optimize-database job
+2026-01-22 03:25:33.890 ERROR [cron] optimize-database failed: VACUUM killed due to lock timeout
+2026-01-22 04:00:00.901 INFO  [cron] Starting send-scheduled-emails job
+2026-01-22 04:01:45.012 ERROR [cron] send-scheduled-emails partial failure: SMTP server rejected 12 emails
+2026-01-22 04:01:45.013 WARN  [cron] Bounce details: invalid recipient addresses
+2026-01-22 05:00:00.123 INFO  [cron] Starting cache-warmup job
+2026-01-22 05:00:01.234 ERROR [cron] cache-warmup failed: Redis ECONNREFUSED 127.0.0.1:6379

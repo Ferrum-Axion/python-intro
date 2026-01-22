@@ -1,0 +1,14 @@
+2026-01-22 08:00:00.123 INFO  dockerd[1234] Starting Docker daemon
+2026-01-22 08:00:01.234 INFO  dockerd[1234] Loading containers: start
+2026-01-22 08:00:02.345 INFO  dockerd[1234] Loading containers: done
+2026-01-22 08:00:03.456 INFO  dockerd[1234] Docker daemon running, API version 1.43
+2026-01-22 08:00:15.567 INFO  containerd Container webapp-1 started (image: webapp:v2.4.1)
+2026-01-22 08:01:23.678 INFO  containerd Container redis-cache started (image: redis:7.0-alpine)
+2026-01-22 08:02:34.789 INFO  containerd Container postgres-db started (image: postgres:15)
+2026-01-22 08:03:45.890 INFO  dockerd[1234] Network bridge0 configured: 172.17.0.0/16
+2026-01-22 08:04:56.901 INFO  containerd Image pull: nginx:1.25 (3 layers, 45MB)
+2026-01-22 08:05:12.012 INFO  containerd Container nginx-proxy started (image: nginx:1.25)
+2026-01-22 08:06:23.123 INFO  dockerd[1234] Volume data-volume mounted at /var/lib/docker/volumes/data
+2026-01-22 08:07:34.234 INFO  containerd Health check passed: webapp-1
+2026-01-22 08:08:45.345 INFO  containerd Health check passed: redis-cache
+2026-01-22 08:09:56.456 INFO  dockerd[1234] Pruned 5 unused images, freed 2.3GB

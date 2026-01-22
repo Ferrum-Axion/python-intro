@@ -1,0 +1,18 @@
+2026-01-22 12:00:15.123 UTC [5678] ERROR:  duplicate key value violates unique constraint "users_email_key"
+2026-01-22 12:00:15.124 UTC [5678] DETAIL:  Key (email)=(john.doe@example.com) already exists.
+2026-01-22 12:00:15.125 UTC [5678] STATEMENT:  INSERT INTO users (email, name) VALUES ('john.doe@example.com', 'John Doe')
+2026-01-22 12:01:33.445 UTC [5679] ERROR:  deadlock detected
+2026-01-22 12:01:33.446 UTC [5679] DETAIL:  Process 5679 waits for ShareLock on transaction 12345; blocked by process 5680.
+        Process 5680 waits for ShareLock on transaction 12346; blocked by process 5679.
+2026-01-22 12:01:33.447 UTC [5679] HINT:  See server log for query details.
+2026-01-22 12:01:33.448 UTC [5679] STATEMENT:  UPDATE inventory SET quantity = quantity - 5 WHERE product_id = 789
+2026-01-22 12:02:45.667 UTC [5680] FATAL:  connection limit exceeded for non-superusers
+2026-01-22 12:03:55.889 UTC [5681] ERROR:  column "nonexistent_column" does not exist
+2026-01-22 12:03:55.890 UTC [5681] STATEMENT:  SELECT nonexistent_column FROM products WHERE id = 123
+2026-01-22 12:04:12.001 UTC [5678] ERROR:  null value in column "user_id" violates not-null constraint
+2026-01-22 12:04:12.002 UTC [5678] DETAIL:  Failing row contains (null, 2026-01-22 12:04:12, pending, 150.00).
+2026-01-22 12:04:12.003 UTC [5678] STATEMENT:  INSERT INTO orders (user_id, created_at, status, total) VALUES (null, NOW(), 'pending', 150.00)
+2026-01-22 12:05:23.223 UTC [5679] ERROR:  out of memory
+2026-01-22 12:05:23.224 UTC [5679] DETAIL:  Failed on request of size 1073741824.
+2026-01-22 12:06:44.445 UTC [5680] ERROR:  canceling statement due to statement timeout
+2026-01-22 12:06:44.446 UTC [5680] STATEMENT:  SELECT * FROM huge_table WHERE complex_condition = true

@@ -1,0 +1,22 @@
+2026-01-22 09:00:15.123 INFO  [main] com.webapp.Application - Starting Application v2.4.1
+2026-01-22 09:00:16.445 INFO  [main] com.webapp.config.DatabaseConfig - Initializing database connection pool
+2026-01-22 09:00:17.889 ERROR [main] com.webapp.config.DatabaseConfig - Failed to connect to database: Connection refused
+2026-01-22 09:00:17.890 ERROR [main] com.webapp.config.DatabaseConfig - java.sql.SQLException: Cannot connect to database server at db-primary.internal:5432
+	at com.zaxxer.hikari.pool.HikariPool.createConnection(HikariPool.java:234)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:156)
+	at com.webapp.config.DatabaseConfig.initPool(DatabaseConfig.java:89)
+	at com.webapp.Application.main(Application.java:45)
+2026-01-22 09:00:18.001 WARN  [main] com.webapp.config.DatabaseConfig - Retrying database connection in 5 seconds (attempt 1/5)
+2026-01-22 09:00:23.112 ERROR [main] com.webapp.config.DatabaseConfig - Failed to connect to database: Connection refused
+2026-01-22 09:00:23.113 WARN  [main] com.webapp.config.DatabaseConfig - Retrying database connection in 5 seconds (attempt 2/5)
+2026-01-22 09:00:28.234 ERROR [main] com.webapp.config.DatabaseConfig - Failed to connect to database: Connection refused
+2026-01-22 09:00:28.235 WARN  [main] com.webapp.config.DatabaseConfig - Retrying database connection in 5 seconds (attempt 3/5)
+2026-01-22 09:00:33.445 INFO  [main] com.webapp.config.DatabaseConfig - Database connection established successfully
+2026-01-22 09:00:33.889 INFO  [main] com.webapp.Application - Application started successfully on port 8080
+2026-01-22 09:01:15.667 INFO  [http-nio-8080-exec-1] com.webapp.controller.HealthController - GET /health - 200 OK (12ms)
+2026-01-22 09:02:33.112 INFO  [http-nio-8080-exec-2] com.webapp.controller.UserController - GET /api/users - 200 OK (67ms)
+2026-01-22 09:03:45.889 ERROR [http-nio-8080-exec-3] com.webapp.controller.OrderController - POST /api/orders - 500 Internal Server Error
+2026-01-22 09:03:45.890 ERROR [http-nio-8080-exec-3] com.webapp.service.OrderService - Failed to process order: Inventory service unavailable
+	at com.webapp.service.OrderService.createOrder(OrderService.java:156)
+	at com.webapp.controller.OrderController.createOrder(OrderController.java:78)
+2026-01-22 09:04:12.334 INFO  [http-nio-8080-exec-1] com.webapp.controller.ProductController - GET /api/products - 200 OK (89ms)

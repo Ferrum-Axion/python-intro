@@ -1,0 +1,14 @@
+2026-01-22 08:00:00.123 INFO  kube-scheduler Scheduled pod/webapp-deployment-abc123 to node/worker-1
+2026-01-22 08:00:01.234 INFO  kubelet Successfully pulled image "webapp:v2.4.1" in 3.45s
+2026-01-22 08:00:02.345 INFO  kubelet Created container webapp
+2026-01-22 08:00:03.456 INFO  kubelet Started container webapp
+2026-01-22 08:00:15.567 INFO  kube-controller-manager ReplicaSet webapp-deployment-abc123 created pod webapp-deployment-abc123-xyz
+2026-01-22 08:01:23.678 INFO  kubelet Liveness probe succeeded for pod/webapp-deployment-abc123-xyz
+2026-01-22 08:02:34.789 INFO  kubelet Readiness probe succeeded for pod/webapp-deployment-abc123-xyz
+2026-01-22 08:03:45.890 INFO  kube-scheduler Scheduled pod/redis-cache-0 to node/worker-2
+2026-01-22 08:04:56.901 INFO  kubelet Successfully pulled image "redis:7.0-alpine" in 2.12s
+2026-01-22 08:05:12.012 INFO  kubelet Container redis-cache-0 started
+2026-01-22 08:06:23.123 INFO  kube-controller-manager Service webapp-service endpoints updated: [10.0.0.45:8080, 10.0.0.46:8080]
+2026-01-22 08:07:34.234 INFO  kubelet Pod webapp-deployment-abc123-xyz is healthy
+2026-01-22 08:08:45.345 INFO  kube-controller-manager HorizontalPodAutoscaler webapp-hpa: current replicas=2, desired replicas=2
+2026-01-22 08:09:56.456 INFO  kube-scheduler Preemption not needed, pod fits on existing nodes

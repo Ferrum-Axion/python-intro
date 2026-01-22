@@ -1,0 +1,12 @@
+2026-01-22 17:00:15.123 ERROR dockerd[1234] Failed to start container webapp-2: OCI runtime error
+2026-01-22 17:00:15.124 ERROR dockerd[1234] container_linux.go:380: starting container process caused: exec: "/app/start.sh": permission denied
+2026-01-22 17:01:23.234 ERROR containerd Container webapp-1 OOMKilled: exceeded 512MB memory limit
+2026-01-22 17:02:34.345 WARN  dockerd[1234] Container postgres-db unhealthy: health check failed 3 times
+2026-01-22 17:03:45.456 ERROR containerd Failed to pull image "private-registry.io/app:latest": unauthorized
+2026-01-22 17:04:56.567 ERROR dockerd[1234] Network error: failed to allocate gateway (172.17.0.1): Address already in use
+2026-01-22 17:05:12.678 ERROR containerd Container redis-cache exited with code 137 (killed)
+2026-01-22 17:06:23.789 WARN  dockerd[1234] Disk space low: /var/lib/docker at 95% capacity
+2026-01-22 17:07:34.890 ERROR containerd Failed to mount volume: /data/uploads - no such file or directory
+2026-01-22 17:08:45.901 ERROR dockerd[1234] BuildKit error: failed to solve: dockerfile parse error line 15
+2026-01-22 17:09:56.012 ERROR containerd Container nginx-proxy: bind for 0.0.0.0:80 failed: port is already allocated
+2026-01-22 17:10:12.123 WARN  dockerd[1234] Swarm manager unreachable, node entering standalone mode

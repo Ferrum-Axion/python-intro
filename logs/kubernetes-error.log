@@ -1,0 +1,12 @@
+2026-01-22 15:00:15.123 ERROR kubelet Failed to pull image "webapp:v2.4.2": rpc error: code = NotFound desc = failed to pull and unpack image: failed to resolve reference "webapp:v2.4.2": not found
+2026-01-22 15:00:16.234 WARN  kubelet Back-off restarting failed container webapp in pod webapp-deployment-def456
+2026-01-22 15:01:23.345 ERROR kube-scheduler 0/3 nodes are available: 1 node(s) had taint {node.kubernetes.io/not-ready: }, 2 Insufficient memory
+2026-01-22 15:02:34.456 ERROR kubelet Container webapp exceeded memory limit: 512Mi, OOMKilled
+2026-01-22 15:03:45.567 WARN  kube-controller-manager ReplicaSet webapp-deployment-def456 has 1 unavailable replica(s)
+2026-01-22 15:04:56.678 ERROR kubelet Liveness probe failed: HTTP probe failed with statuscode: 503
+2026-01-22 15:05:12.789 ERROR kubelet Readiness probe failed: connection refused
+2026-01-22 15:06:23.890 WARN  kubelet Pod webapp-deployment-def456-uvw is being evicted due to node pressure
+2026-01-22 15:07:34.901 ERROR kube-controller-manager Job import-job failed: BackoffLimitExceeded
+2026-01-22 15:08:45.012 ERROR kubelet Failed to mount volume "config-volume": configmap "app-config" not found
+2026-01-22 15:09:56.123 WARN  kube-scheduler Preempting pod low-priority-pod to make room for high-priority-pod
+2026-01-22 15:10:12.234 ERROR kubelet CrashLoopBackOff: Container keeps crashing, last exit code: 137

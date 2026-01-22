@@ -1,0 +1,10 @@
+2026/01/22 11:15:23 [error] 1234#1234: *5678 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.1.45, server: api.example.com, request: "POST /api/orders HTTP/1.1", upstream: "http://127.0.0.1:8080/api/orders"
+2026/01/22 11:15:24 [error] 1234#1234: *5679 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 192.168.1.78, server: api.example.com, request: "GET /api/reports/heavy HTTP/1.1"
+2026/01/22 11:16:12 [warn] 1234#1234: *5680 upstream server temporarily disabled while connecting to upstream, client: 10.0.0.123
+2026/01/22 11:17:33 [error] 1234#1234: *5681 open() "/var/www/html/favicon.ico" failed (2: No such file or directory), client: 192.168.1.92, request: "GET /favicon.ico HTTP/1.1"
+2026/01/22 11:18:01 [crit] 1234#1234: *5682 SSL_do_handshake() failed (SSL: error:14094410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure), client: 172.16.0.55
+2026/01/22 11:19:22 [error] 1234#1234: *5683 no live upstreams while connecting to upstream, client: 192.168.1.112, server: api.example.com, request: "GET /api/inventory HTTP/1.1"
+2026/01/22 11:20:15 [error] 1234#1234: *5684 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 192.168.1.45
+2026/01/22 11:21:44 [warn] 1234#1234: *5685 limiting requests, excess: 10.234 by zone "api_limit", client: 203.0.113.50
+2026/01/22 11:22:33 [error] 1234#1234: *5686 access forbidden by rule, client: 198.51.100.23, server: admin.example.com, request: "GET /admin/config HTTP/1.1"
+2026/01/22 11:23:55 [error] 1234#1234: *5687 client intended to send too large body: 52428801 bytes, client: 192.168.1.78, request: "POST /api/upload HTTP/1.1"

@@ -1,0 +1,16 @@
+2026-01-22 08:00:01.123 UTC [1234] LOG:  database system is ready to accept connections
+2026-01-22 08:00:15.445 UTC [1235] LOG:  checkpoint starting: time
+2026-01-22 08:00:23.667 UTC [1235] LOG:  checkpoint complete: wrote 156 buffers (1.0%); 0 WAL file(s) added, 0 removed, 1 recycled
+2026-01-22 08:15:33.889 UTC [5678] LOG:  connection received: host=10.0.0.45 port=54321
+2026-01-22 08:15:33.901 UTC [5678] LOG:  connection authorized: user=webapp database=production
+2026-01-22 08:16:12.112 UTC [5678] LOG:  duration: 45.234 ms  statement: SELECT * FROM users WHERE id = 1542
+2026-01-22 08:17:45.334 UTC [5679] LOG:  connection received: host=10.0.0.46 port=54322
+2026-01-22 08:17:45.345 UTC [5679] LOG:  connection authorized: user=webapp database=production
+2026-01-22 08:18:23.556 UTC [5678] LOG:  duration: 123.456 ms  statement: SELECT p.*, c.name as category FROM products p JOIN categories c ON p.category_id = c.id WHERE p.active = true
+2026-01-22 08:19:44.778 UTC [5679] LOG:  duration: 234.567 ms  statement: INSERT INTO orders (user_id, total, status) VALUES (1542, 299.99, 'pending') RETURNING id
+2026-01-22 08:20:15.889 UTC [1235] LOG:  automatic vacuum of table "production.public.sessions": index scans: 1
+2026-01-22 08:21:33.001 UTC [5678] LOG:  duration: 12.345 ms  statement: UPDATE users SET last_login = NOW() WHERE id = 1542
+2026-01-22 08:22:45.223 UTC [5680] LOG:  connection received: host=10.0.0.47 port=54323
+2026-01-22 08:22:45.234 UTC [5680] LOG:  connection authorized: user=analytics database=production
+2026-01-22 08:23:55.445 UTC [5680] LOG:  duration: 5678.901 ms  statement: SELECT date_trunc('day', created_at), count(*) FROM orders GROUP BY 1 ORDER BY 1
+2026-01-22 08:25:01.667 UTC [1235] LOG:  checkpoint starting: time
