@@ -1,0 +1,3 @@
+1. Number of logs in folder: 20 
+2. Buggy log names: ['auth-error.log', 'api-gateway-error.log', 'docker-error.log', 'database-error.log', 'kubernetes-error.log', 'payment-error.log', 'cron-error.log', 'nginx-error.log', 'monitoring-metrics.log', 'app-server-02.log'] 
+3. Log levels found in logs: {'warn', 'error', 'info'} 
