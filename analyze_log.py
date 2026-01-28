@@ -1,10 +1,6 @@
 import os
 import sys
 
-file = sys.argv[1]
-
-filepath = os.path.join("./logs", file)
-
 def get_number_of_lines(filepath):
     counter = 0
     with open(filepath) as file:
@@ -21,13 +17,15 @@ def get_number_of_chars(filepath):
 
 def get_number_of_log_items_by_type(filepath):
     log_item_types = {
-    "info": 0, 
-    "error": 0, 
-    "warn": 0,
-    "log": 0,
-    "detail": 0,
-    "fatal": 0,
-    "statement": 0,
+        "info": 0, 
+        "error": 0, 
+        "warn": 0,
+        "log": 0,
+        "detail": 0,
+        "fatal": 0,
+        "statement": 0,
+        "crit": 0,
+        "hint": 0,
     }
     with open(filepath) as file:
         for l in file:
@@ -46,6 +44,10 @@ def get_number_of_log_items_by_type(filepath):
                 log_item_types["fatal"] += 1
             if "statement" in ll:
                 log_item_types["statement"] += 1
+            if "crit" in ll:
+                log_item_types["crit"] += 1
+            if "hint" in ll:
+                log_item_types["hint"] += 1
         return log_item_types
 
 def get_unique_log_item_type(filepath):
@@ -67,6 +69,10 @@ def get_unique_log_item_type(filepath):
                 types.add("fatal")
             if "statement" in ll:
                 types.add("statement")
+            if "crit" in ll:
+                types.add("crit")
+            if "hint" in ll:
+                types.add("hint")
         return types
 
 def is_buggy_log(filepath):
@@ -78,6 +84,9 @@ def is_buggy_log(filepath):
         return False
 
 if __name__ == "__main__":
+    file = sys.argv[1]
+    filepath = os.path.join("./logs", file)
+
     print("number of lines: " + str(get_number_of_lines(filepath)))
     print("number of log items by type: " + str(get_number_of_log_items_by_type(filepath)))
     print("number of characters: " + str(get_number_of_chars(filepath)))
