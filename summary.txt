@@ -1,0 +1,4 @@
+Total log files: 20
+Buggy log files: 8
+Buggy log file names: api-gateway-error.log, docker-error.log, app-server-02.log, kubernetes-error.log, auth-error.log, database-error.log, cron-error.log, payment-error.log
+All log levels found: ERROR, INFO, WARN
